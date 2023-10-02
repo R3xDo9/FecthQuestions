@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}
+
+.error{
+  background-color: red;
+  margin: 12px;
+  padding: 0 20px;
+  border: 2px solid black;
+}
+
+.question-header{
+  width: 700px;
+  background-color: white;
+  margin:1rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-header{
+  width: 200%;
+
+}
+.question-header p{
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.answers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+  height: 20px;
+  width: 100%;
+  position: relative;
+}
+label{
+  color: black;
+}
+
+/* Estilos CSS */
+.green-background {
+  background-color: lightgreen;
+}
+
+.red-background {
+  background-color: red;
+}
+
+.radiobutton{
+  border-left: 1px solid black;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.radiobutton input[type="radio"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.radiobutton label {
+  position: relative;
+  z-index: 1; /* Asegura que el label esté en la parte superior para ser visible */
+  font-size: 25px;
+}
+
+/* Estilos para resaltar el label cuando se selecciona */
+.radiobutton input[type="radio"]:checked + label {
+  font-weight: bold; /* Opcional: resaltar el label seleccionado */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
