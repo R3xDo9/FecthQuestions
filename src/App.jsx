@@ -1,5 +1,5 @@
-import { useFetch } from './useFetch';
 import './App.css';
+import { useFetch } from './useFetch';
 import { useState, useEffect } from 'react';
 
 const initialAreaCounts = {
